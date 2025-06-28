@@ -1,5 +1,3 @@
-# Gossip-Girl
-Nour-Alhuda Gossip Girl
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,119 +8,105 @@ Nour-Alhuda Gossip Girl
     body {
       margin: 0;
       font-family: 'Georgia', serif;
-      background-color: #0d0d0d;
-      color: #fff;
+      background-color: #ffe6f0;
+      color: #4b004b;
     }
     header {
-      background-color: #000;
-      color: gold;
+      background-color: #ffccdd;
+      color: #800040;
       text-align: center;
       padding: 2rem 1rem 1rem;
-      border-bottom: 2px solid gold;
+      border-bottom: 2px solid #800040;
     }
     header h1 {
       margin: 0;
       font-size: 2.8em;
     }
+    nav {
+      background-color: #ffcce0;
+      padding: 1rem;
+      text-align: center;
+      border-bottom: 2px solid #800040;
+    }
+    nav a {
+      color: #800040;
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: bold;
+    }
     .container {
-      max-width: 800px;
+      display: flex;
+      max-width: 1000px;
       margin: 2rem auto;
       padding: 0 1rem;
     }
+    .main-content {
+      flex: 2;
+      margin-right: 2rem;
+    }
     .post {
-      background-color: #1a1a1a;
+      background-color: #fff0f5;
       padding: 1rem;
-      border-left: 5px solid gold;
+      border-left: 5px solid #cc6699;
       margin-bottom: 1.5rem;
-      box-shadow: 0 0 10px rgba(255, 215, 0, 0.2);
+      box-shadow: 0 0 10px rgba(204, 102, 153, 0.2);
     }
     .post h3 {
       margin: 0 0 0.5rem 0;
-      color: gold;
+      color: #800040;
       font-weight: normal;
     }
     .post p {
       margin: 0.5rem 0 1rem;
     }
-    .reactions span {
-      margin-right: 1rem;
-      cursor: pointer;
-    }
-    form {
-      background-color: #111;
+    .sidebar {
+      flex: 1;
+      background-color: #fff0f5;
       padding: 1rem;
-      border: 1px solid #444;
-    }
-    form textarea {
-      width: 100%;
-      height: 100px;
-      padding: 0.5rem;
-      background-color: #222;
-      color: white;
-      border: none;
-      resize: none;
-    }
-    form button {
-      margin-top: 1rem;
-      padding: 0.5rem 1rem;
-      background-color: gold;
-      color: black;
-      border: none;
-      cursor: pointer;
+      border: 1px solid #ffb6c1;
     }
     footer {
       text-align: center;
-      color: #888;
+      color: #800040;
       padding: 2rem 1rem;
       font-size: 0.9em;
-      border-top: 1px solid #333;
+      border-top: 1px solid #cc6699;
+      background-color: #ffccdd;
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>xoxo, Gossip Girl</h1>
-    <p>Where secrets don't stay secret...</p>
+    <h1>you know you love me</h1>
+    <p>xoxo, Gossip Girl</p>
   </header>
 
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Gossip</a>
+    <a href="#">Posts</a>
+    <a href="#">Pics</a>
+    <a href="#">Parties</a>
+    <a href="#">Links</a>
+    <a href="#">More</a>
+  </nav>
+
   <div class="container">
-    <!-- Example Gossip Posts -->
-    <div class="post">
-      <h3>From: anonymous - 2:47 PM</h3>
-      <p>Serena spotted sneaking into the boys' dorm. Trouble?</p>
-      <div class="reactions">
-        <span>👀 21</span><span>🔥 17</span><span>😱 10</span>
-      </div>
-    </div>
-    <div class="post">
-      <h3>From: insider - 1:20 PM</h3>
-      <p>Chuck and Blair arguing again at lunch. Same old drama?</p>
-      <div class="reactions">
-        <span>👀 30</span><span>🔥 22</span><span>😱 5</span>
+    <div class="main-content">
+      <div class="post">
+        <h3>From: anonymous - 3:45 PM</h3>
+        <p>Rumors are swirling after a surprise meeting in the hallway... 👀</p>
       </div>
     </div>
 
-    <!-- Submit Gossip Form -->
-    <form onsubmit="submitGossip(event)">
-      <h3>أرسل إشاعة مجهولة</h3>
-      <textarea placeholder="اكتب الإشاعة هنا..." required></textarea>
-      <br>
-      <button type="submit">إرسال</button>
-    </form>
+    <div class="sidebar">
+      <h3>Welcome</h3>
+      <p>This is your number one source into the scandalous lives of high school’s elite.</p>
+    </div>
   </div>
 
   <footer>
-    أنت لا تعرفني... لكني أعرف كل شيء عنكم 😉<br>
-    &copy; Gossip Girl School Edition
+    &copy; Gossip Girl School Edition | All secrets reserved
   </footer>
-
-  <script>
-    function submitGossip(e) {
-      e.preventDefault();
-      alert("تم إرسال الإشاعة بنجاح! سيتم مراجعتها من قبل Gossip Girl.");
-      e.target.reset();
-      // ملاحظة: هنا منقدر نربط الإشعار يوصل لإيميلك لاحقًا
-    }
-  </script>
 </body>
 </html>
